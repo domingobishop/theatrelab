@@ -18,7 +18,8 @@ body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;
 	/*The weights are 300 (light), 400 (normal), 600 (semibold), and 700 (bold) and the only acceptable CSS keyword is "normal". */
 	text-rendering: optimizeLegibility;
-	color: #444;
+	color: #fff;
+	background-color: #000;
 	font-size: 18px;
 	line-height: 1.6;
 }
@@ -27,10 +28,9 @@ html, button, input, select, textarea {
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color: #000;
 }
 a {
-	color: #000;
+	color: #fff;
 }
 a:hover, a:focus {
 	color: #3b94d9;
@@ -66,6 +66,7 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	hyphens: none;
 	word-wrap: normal;
 }
+
 /**
  * Nav
  * ----------------------------------------------------------------------------
@@ -76,41 +77,64 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
 	text-transform: uppercase;
 	font-weight: 500;
 	border-radius: 0;
-	border: none;
-	background-color: #fff;
-    box-shadow: 0px 5px 14px #444;
+    border: none;
+	border-bottom: 1px solid #444;
+    background-color: transparent;
 }
 .navbar-nav>li>a {
 	padding-bottom: 15.5px;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #000;
-	border-bottom: solid 4px #fff;
+    color: #fff;
+	border-bottom: solid 4px #000;
 }
 .navbar-default .navbar-brand {
-    font-weight: 700;
-    color: #000;
+    font-weight: 400;
+    color: #fff;
 }
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-	color: #3b94d9;
+	color: #eb1c3b;
 }
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-	border-bottom: solid 4px #3b94d9;
+	border-bottom: solid 4px #444;
 }
 .navbar-default .navbar-nav > li.current-menu-item > a {
-	border-bottom: solid 4px #3b94d9;
+	border-bottom: solid 4px #444;
 }
 
 /**
  * Header
  * ----------------------------------------------------------------------------
  */
+.main {
+    position: relative;
+}
+.branding {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.branding img {
+    margin: 1em 0 0 1em;
+    max-width: 100px;
+}
 
+/**
+ * Home
+ * ----------------------------------------------------------------------------
+ */
 
+.home-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    padding: 2em 3em;
+}
 
 /**
  * Footer
@@ -119,65 +143,14 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  
 footer {
 	padding: 1em 0;
-	background-color: #e4eaea;
 }
 footer ul {
 	list-style-type: none;
 	padding: 0;
 }
-footer .bc-info {
+footer .footer-info {
 	padding: 1em;
 }
-
-/**
- * Home
- * ----------------------------------------------------------------------------
- */
-
-.bc-banner {
-	background: url('img/bg.jpg') #e4eaea center center;
-	background-size: cover;
-}
-.banner-title {
-    color: #000;
-	margin: 2em 0 3em;
-	padding: 0.5em 1em;
-	background: #fff;
-	border-radius: 3px;
-}
-.loop-wrap article {
-    margin-bottom: 2em;
-}
-.loop-wrap .entry-content-loop {
-	padding: 1em;
-	background-color: #e4eaea;
-}
-.loop-wrap .entry-thumbnail {
-	max-height: 200px;
-	overflow: hidden;
-}
-.loop-wrap .btn-default {
-    color: #95a5a6;
-    background-color: #fff;
-}
-.pager li>a, .pager li>span {
-	background-color: #95a5a6;
-	border-radius: 3px;
-	border: none;
-	color: #fff;
-}
-.pager li>a:hover,
-.pager li>a:focus,
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active,
-.open>.dropdown-toggle.btn-default {
-    color: #fff;
-    text-decoration: none;
-	background-color: #3b94d9;
-}
-
 
 /**
  * Page & Posts
