@@ -41,7 +41,7 @@
     </header>
     <!-- #head -->
     <main id="main" class="main" role="main">
-        <div class="branding hidden-xs hidden-sm hidden-md">
+        <div class="branding hidden-xs">
             <a href="<?php bloginfo('siteurl'); ?>/"
                title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="img-responsive">
