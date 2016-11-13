@@ -16,10 +16,10 @@ get_header(); ?>
     </div>
 <?php if ( has_post_thumbnail() ) {
     $bg_img = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); ?>
-    <div id="banner" class="tl-home" role="banner" style="background: url(<?php echo $bg_img[0]; ?>) no-repeat center center;background-size: cover">
+    <div id="home_banner" class="banner" role="banner" style="background: url(<?php echo $bg_img[0]; ?>) no-repeat center center;background-size: cover">
     </div>
 <?php } else { ?>
-    <div class="tl-home" role="banner">
+    <div id="home_banner" class="banner" role="banner">
     </div>
 <?php } ?>
 <?php endwhile; ?>

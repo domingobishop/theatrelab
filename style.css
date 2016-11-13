@@ -20,7 +20,7 @@ body {
 	text-rendering: optimizeLegibility;
 	color: #fff;
 	background-color: #000;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.6;
 }
 html, button, input, select, textarea {
@@ -161,7 +161,8 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  */
  
 footer {
-	padding: 1em 0;
+    border-top: 1px solid #7b8a8b;
+	padding: 2em 0;
 }
 footer ul {
 	list-style-type: none;
@@ -179,17 +180,20 @@ footer small, footer small a {
  * Page & Posts
  * ----------------------------------------------------------------------------
  */
-.page-banner {
+#page_banner {
     height: 360px;
 }
 .page-content {
-    margine-bottom: 2em;
+    margine-bottom: 4em;
 }
 .page-content article {
     position: relative;
     top: -2em;
     background: #000;
     padding: 0.3em 1.6em;
+}
+.embed-youtube iframe {
+    width: 100%;
 }
 
  /**

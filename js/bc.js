@@ -14,7 +14,7 @@ $(".wp-caption").removeAttr('style');
 function resize()
 {
     var heights = window.innerHeight - 55;
-    document.getElementById("banner").style.height = heights + "px";
+    document.getElementById("home_banner").style.height = heights + "px";
 }
 resize();
 window.onresize = function() {
