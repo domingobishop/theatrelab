@@ -41,6 +41,11 @@ a:hover, a:focus {
 .entry-content a:hover, .entry-content a:focus {
 	text-decoration: none;
 }
+.btn-default {
+    color: #fff;
+    background-color: transparent;
+    border-color: #ccc;
+}
 
 /**
  * Hyphenation
@@ -181,7 +186,7 @@ footer small, footer small a {
  * ----------------------------------------------------------------------------
  */
 #page_banner {
-    height: 360px;
+    height: 480px;
 }
 .page-content {
     margin-bottom: 4em;
@@ -200,7 +205,7 @@ footer small, footer small a {
     margin: 2em 0;
 }
 .production-item {
-    margin-bottom: 1em;
+    margin-bottom: 1.6em;
 }
 
  /**
