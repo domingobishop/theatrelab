@@ -184,7 +184,7 @@ footer small, footer small a {
     height: 360px;
 }
 .page-content {
-    margine-bottom: 4em;
+    margin-bottom: 4em;
 }
 .page-content article {
     position: relative;
@@ -194,6 +194,13 @@ footer small, footer small a {
 }
 .embed-youtube iframe {
     width: 100%;
+}
+
+.page-landing article {
+    margin: 2em 0;
+}
+.production-item {
+    margin-bottom: 1em;
 }
 
  /**
