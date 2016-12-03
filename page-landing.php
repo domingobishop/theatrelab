@@ -30,7 +30,7 @@ get_header(); ?>
                             <div <?php post_class( array('row', 'production-item') ); ?>>
                                 <div class="col-sm-12">
                                     <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-                                    <p><?php echo excerpt(28); ?></p>
+                                    <p><?php the_content(); ?></p>
                                     <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="btn btn-default btn-sm" role="button">Read more</a>
                                 </div>
                             </div>
