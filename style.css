@@ -193,20 +193,53 @@ footer small, footer small a {
 }
 .page-content article {
     position: relative;
-    top: -2em;
+    top: -5em;
+}
+.page-content article .img-gallery {
+    padding: 0.3em 1.6em;
+}
+.page-content article .entry {
     background: #000;
     padding: 0.3em 1.6em;
 }
 .embed-youtube iframe {
     width: 100%;
 }
+.production-item {
+    margin-bottom: 2.4em;
+}
+.modal-content {
+    background-color: #000;
+    border: 1px solid #7b8a8b;
+}
+.modal-header {
+    display: none;
+}
 
+.page-landing h1 {
+    margin-bottom: 1em;
+}
 .page-landing article {
     margin: 2em 0;
 }
-.production-item {
+
+.news-content article {
     margin-bottom: 1.6em;
 }
+.news-content {
+    margin-bottom: 4em;
+}
+
+/* Flexbox */
+.equal-heights-flex-box {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 
  /**
  * Images

@@ -29,14 +29,16 @@ get_header(); ?>
                                 $child_query = new WP_Query( $args );
                                 while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
                                     <div <?php post_class( array('row', 'production-item') ); ?>>
-                                        <div class="col-md-8">
+                                        <div class="col-sm-8">
+                                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
                                             <?php if ( has_post_thumbnail() ) {
                                                 the_post_thumbnail('full', array( 'class' => 'img-responsive' ));
                                             } else { ?>
                                                 <img src="<?php echo get_template_directory_uri(); ?>/img/thumb.jpg" class="img-responsive">
                                             <?php } ?>
+                                            </a>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-sm-4">
                                             <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
                                             <p><?php echo excerpt(28); ?></p>
                                             <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="btn btn-default btn-sm" role="button">Read more</a>
@@ -56,14 +58,16 @@ get_header(); ?>
                                 $child_query = new WP_Query( $args );
                                 while ( $child_query->have_posts() ) : $child_query->the_post(); ?>
                                     <div <?php post_class( array('row', 'production-item') ); ?>>
-                                        <div class="col-md-4">
+                                        <div class="col-sm-4">
+                                            <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>">
                                             <?php if ( has_post_thumbnail() ) {
                                                 the_post_thumbnail('thumbnail', array( 'class' => 'img-responsive' ));
                                             } else { ?>
                                                 <img src="<?php echo get_template_directory_uri(); ?>/img/thumb.jpg" class="img-responsive">
                                             <?php } ?>
+                                            </a>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-sm-8">
                                             <h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
                                             <p><?php echo excerpt(14); ?></p>
                                             <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="btn btn-default btn-sm" role="button">Read more</a>
