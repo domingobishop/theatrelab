@@ -57,10 +57,10 @@ get_header(); ?>
                                 $args = array(
                                     'category_name' => 'tours-and-festivals',
                                     'post_type' => 'page',
-                                    'cat' => '-35',
+                                    'cat' => '-35,-3',
                                     'posts_per_page' => -1,
                                     'orderby' => 'date menu_order',
-                                    'order' => 'ASC'
+                                    'order' => 'DESC'
                                 );
                                 $child_query = new WP_Query( $args );
                                 while ( $child_query->have_posts() ) : $child_query->the_post();

@@ -111,6 +111,22 @@ function page_meta_boxes() {
                     'std' => ''
                 )
             )
+        ),
+        array(
+            'id' => 'bg_position',
+            'title' => 'Feature image position',
+            'pages' => 'page',
+            'context' => 'normal',
+            'priority' => 'high',
+            'fields' => array(
+                array(
+                    'name' => 'Position',
+                    'desc' => '',
+                    'id' => 'bg_img_position',
+                    'type' => 'select',
+                    'options' => array('center', 'top', 'bottom')
+                )
+            )
         )
     );
     // Adds meta boxes to Level 1 Landing page template

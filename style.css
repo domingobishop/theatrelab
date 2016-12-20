@@ -46,6 +46,16 @@ a:hover, a:focus {
     background-color: transparent;
     border-color: #ccc;
 }
+@media (min-width: 992px) {
+    .container {
+        width: 770px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
 
 /**
  * Hyphenation
@@ -188,10 +198,13 @@ footer small, footer small a {
 #page_banner {
     height: 480px;
 }
-.page-content {
+.page-content, .post-content {
     margin-bottom: 4em;
 }
-.page-content article {
+.entry-header {
+    margin-bottom: 1.6em;
+}
+.banner-offset article {
     position: relative;
     top: -5em;
 }
@@ -213,7 +226,12 @@ footer small, footer small a {
     border: 1px solid #7b8a8b;
 }
 .modal-header {
-    display: none;
+    padding: 0 15px;
+    border-bottom: none;
+}
+.close {
+    color: #fff;
+    opacity: 1;
 }
 
 .page-landing h1 {
@@ -221,6 +239,11 @@ footer small, footer small a {
 }
 .page-landing article {
     margin: 2em 0;
+}
+.entry-excerpt {
+    padding: 0.6em;
+    background: #222;
+    border-radius: 3px;
 }
 
 .news-content article {

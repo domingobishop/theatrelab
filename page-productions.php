@@ -50,7 +50,7 @@ get_header(); ?>
                                 $args = array(
                                     'post_parent' => $post->ID,
                                     'post_type' => 'page',
-                                    'cat' => '-35',
+                                    'cat' => '-35,-3',
                                     'posts_per_page' => -1,
                                     'orderby' => 'date menu_order',
                                     'order' => 'DESC'
