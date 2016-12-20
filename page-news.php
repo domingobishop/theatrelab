@@ -28,7 +28,7 @@ get_header(); ?>
                                 </a>
                             </h3>
                             <div class="entry-summary">
-                                <p><?php echo excerpt(36); ?></p>
+                                <p><?php echo excerpt(48); ?></p>
                                 <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>" class="btn btn-default btn-sm" role="button">Read more</a>
                             </div>
                             <!-- .entry-summary -->

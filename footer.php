@@ -16,14 +16,14 @@
               <p>
                   Anastasia Revi <br>
                   <strong>Director</strong><br>
-                  anastasia.revi@theatrelab.co.uk
+                  <a href="mailto:anastasia.revi@theatrelab.co.uk">anastasia.revi@theatrelab.co.uk</a>
               </p>
           </div>
           <div class="col-md-6">
               <p>
                   Martina Reynolds <br>
                   <strong>Producer</strong><br>
-                  martina@theatrelab.co.uk
+                  <a href="mailto:martina@theatrelab.co.uk">martina@theatrelab.co.uk</a>
               </p>
           </div>
           <p>
