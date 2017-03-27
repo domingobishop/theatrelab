@@ -151,7 +151,9 @@ h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
  * Home
  * ----------------------------------------------------------------------------
  */
-
+.banner {
+    min-height: 420px;
+}
 .home-content {
     position: absolute;
     bottom: 0;
