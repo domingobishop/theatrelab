@@ -265,6 +265,21 @@ footer small, footer small a {
     flex-wrap: wrap;
 }
 
+.cookieNotice {
+	padding: 5px; 
+	text-align: center; 
+	background-color: #fbe2bc; 
+	color: #000; 
+	position: fixed; 
+	bottom: 0px; 
+	font-size: 14px; 
+	width: 100%;
+}
+.cookieNotice a {
+	color: rgb(0, 0, 0);
+	text-decoration: underline;
+}
+
 
  /**
  * Images
